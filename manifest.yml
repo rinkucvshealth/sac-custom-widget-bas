@@ -1,0 +1,10 @@
+---
+applications:
+- name: sac-custom-widget
+  memory: 512M
+  disk_quota: 1G
+  instances: 1
+  buildpack: nodejs_buildpack
+  env:
+    NODE_ENV: production
+    ALLOWED_ORIGIN: https://sonos-q.us10.hcs.cloud.sap/sap

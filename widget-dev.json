@@ -1,0 +1,63 @@
+{
+  "id": "com.sap.chatbot.sales.analytics.dev",
+  "version": "5.0.0-dev",
+  "name": "SAP Sales Analytics Chatbot (Development)",
+  "description": "Development version of SAP Sales Analytics chatbot with parameter-based API support",
+  "newInstancePrefix": "ChatWidgetDev",
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAgMkg0Yy0xLjEgMC0yIC45LTIgMnYxOGwyLTJoMTZjMS4xIDAgMi0uOSAyLTJWNGMwLTEuMS0uOS0yLTItMnptLTMgMTJIMTJ2LTJoNXYyem0wLTNoLTkuMDRWOUgxN3YyeiIvPjwvc3ZnPg==",
+  "vendor": "Custom",
+  "eula": "",
+  "license": "",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "sap-chatbot-widget",
+      "url": "http://localhost:3001/widget/widget.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "apiEndpoint": {
+      "type": "string",
+      "description": "API endpoint URL for development",
+      "default": "http://localhost:3001/api"
+    },
+    "apiKey": {
+      "type": "string",
+      "description": "API Key for authentication (optional for local dev)",
+      "default": "test-key-123"
+    },
+    "width": {
+      "type": "integer",
+      "default": 400
+    },
+    "height": {
+      "type": "integer",
+      "default": 600
+    }
+  },
+  "methods": {
+    "sendQuery": {
+      "description": "Send a query to the chatbot",
+      "parameters": [
+        {
+          "name": "query",
+          "type": "string",
+          "description": "The natural language query"
+        }
+      ],
+      "body": "this.sendQuery(query);"
+    },
+    "clearChat": {
+      "description": "Clear the chat history",
+      "body": "this.clearChat();"
+    }
+  },
+  "events": {
+    "onDataReceived": {
+      "description": "Fired when data is received from the API"
+    }
+  }
+}
+
