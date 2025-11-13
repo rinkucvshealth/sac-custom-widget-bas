@@ -18,7 +18,7 @@ async function exploreAPI(serviceName, entityName) {
   try {
     // Get destination
     const destinationService = new DestinationService();
-    const destination = await destinationService.getDestination('AI_DS4500');
+    const destination = await destinationService.getDestination('DIP_SEQ_DEST_200');
     
     if (!destination) {
       throw new Error('Could not get destination configuration');

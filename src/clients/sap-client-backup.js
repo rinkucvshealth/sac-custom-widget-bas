@@ -152,7 +152,7 @@ async function getServiceMetadata(serviceName) {
         let metadataClient;
         try {
             const destinationService = new destination_client_1.DestinationService();
-            const destination = await destinationService.getDestination('AI_DS4500');
+            const destination = await destinationService.getDestination('DIP_SEQ_DEST_200');
             if (destination) {
                 logger_1.logger.info('Using destination service for SAP connection');
                 metadataClient = await destinationService.createAxiosClient(destination);
