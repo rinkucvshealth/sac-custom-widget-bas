@@ -110,7 +110,7 @@ app.get('/widget/widget.js', (req, res) => {
   res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
   res.setHeader('Pragma', 'no-cache');
   res.setHeader('Expires', '0');
-  res.sendFile(path.join(__dirname, '../widget/widget.js'));
+  res.sendFile(path.join(__dirname, '../widget/widget-rinku.js'));
 });
 
 // Dedicated endpoint for widget.json with explicit headers
@@ -122,7 +122,7 @@ app.get('/widget/widget.json', (req, res) => {
   res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
   res.setHeader('Pragma', 'no-cache');
   res.setHeader('Expires', '0');
-  res.sendFile(path.join(__dirname, '../widget/widget.json'));
+  res.sendFile(path.join(__dirname, '../widget/widget-rinku.json'));
 });
 
 // Dedicated endpoint for widget-rinku.js with explicit headers
@@ -168,7 +168,7 @@ app.get('/', (req, res) => {
     endpoints: {
       health: '/health',
       chat: '/api/chat/query',
-      widget: '/widget/widget.json'
+      widget: '/widget/widget-rinku.json'
     }
   });
 });

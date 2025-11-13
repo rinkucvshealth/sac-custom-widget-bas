@@ -12,7 +12,7 @@
     {
       "kind": "main",
       "tag": "sap-chatbot-widget",
-      "url": "https://sac-custom-widget.cfapps.us10.hana.ondemand.com/widget/widget.js?v=6.14.0",
+      "url": "https://sac-custom-widget-chatty-squirrel-kj.cfapps.us10.hana.ondemand.com/widget/widget-rinku.js?v=6.14.0",
       "integrity": "",
       "ignoreIntegrity": true
     }
@@ -21,7 +21,7 @@
     "apiEndpoint": {
       "type": "string",
       "description": "API endpoint URL",
-      "default": "https://sac-custom-widget.cfapps.us10.hana.ondemand.com/api"
+      "default": "https://sac-custom-widget-chatty-squirrel-kj.cfapps.us10.hana.ondemand.com/api"
     },
     "apiKey": {
       "type": "string",
