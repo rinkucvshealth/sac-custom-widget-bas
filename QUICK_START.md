@@ -8,7 +8,7 @@ Create a `.env` file in the project root:
 
 ```bash
 # S/4HANA Connection
-SAP_HOST=vhssnds4ci.hec.sonos.com
+SAP_HOST=vhcvcseqci.sap.cvshealth.com
 SAP_PORT=44300
 SAP_CLIENT=500
 SAP_USERNAME=CDS_VIEWS_PY

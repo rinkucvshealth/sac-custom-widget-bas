@@ -6,5 +6,5 @@ applications:
   instances: 1
   buildpack: nodejs_buildpack
   env:
-    NODE_ENV: production
-    ALLOWED_ORIGIN: https://sonos-q.us10.hcs.cloud.sap/sap
+    NODE_ENV: qa
+    ALLOWED_ORIGIN: https://cvs-pharmacy-q.us10.hcs.cloud.sap/sap
