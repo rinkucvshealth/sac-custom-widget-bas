@@ -377,7 +377,7 @@
     this._shadowRoot = this.attachShadow({ mode: 'open' });
     this._shadowRoot.appendChild(template.content.cloneNode(true));
     
-    this._apiEndpoint = 'https://sac-custom-widget-chatty-squirrel-kj.cfapps.us10.hana.ondemand.com/api';
+    this._apiEndpoint = 'https://fi-retail-sac-custom-widget.cfapps.us10.hana.ondemand.com/api';
     this._apiKey = '6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a';
     this._isProcessing = false;
     
