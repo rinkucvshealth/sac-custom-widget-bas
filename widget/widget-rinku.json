@@ -12,7 +12,7 @@
     {
       "kind": "main",
       "tag": "sap-chatbot-widget",
-      "url": "https://sac-custom-widget.cfapps.us10.hana.ondemand.com/widget/widget.js?v=6.14.0",
+      "url": "https://fi-retail-sac-custom-widget.cfapps.us10.hana.ondemand.com/widget/widget-rinku.js?v=6.14.0",
       "integrity": "",
       "ignoreIntegrity": true
     }
@@ -21,12 +21,12 @@
     "apiEndpoint": {
       "type": "string",
       "description": "API endpoint URL",
-      "default": "https://sac-custom-widget.cfapps.us10.hana.ondemand.com/api"
+      "default": "https://fi-retail-sac-custom-widget.cfapps.us10.hana.ondemand.com/api"
     },
     "apiKey": {
       "type": "string",
       "description": "API Key for authentication",
-      "default": "6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a"
+      "default": ""
     },
     "width": {
       "type": "integer",
@@ -60,4 +60,3 @@
     }
   }
 }
-

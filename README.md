@@ -92,6 +92,8 @@ Query SAP data using natural language.
 
 ## Security
 
+- Keep API credentials (`API_KEY`, `OPENAI_API_KEY`, SAP passwords) out of version control; store them in local `.env` files (already gitignored) and set them with `cf set-env` or your secret manager before deployment.
+- Replace placeholders such as `<REPLACE_WITH_WIDGET_API_KEY>` and `<REPLACE_WITH_OPENAI_API_KEY>` with real values at deploy time only.
 - API key authentication required for all requests
 - CORS restricted to configured SAC tenant domain
 - Rate limiting on API endpoints
