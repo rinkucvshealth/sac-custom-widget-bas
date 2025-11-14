@@ -11,6 +11,7 @@ export interface Destination {
   Password?: string;
   ProxyType: string;
   sapclient?: string;
+  cloudConnectorLocationId?: string;
 }
 
 export class DestinationService {
@@ -85,7 +86,8 @@ export class DestinationService {
               User: config.User || process.env.SAP_USERNAME,
               Password: config.Password || process.env.SAP_PASSWORD,
               ProxyType: config.ProxyType || 'OnPremise',
-              sapclient: config.sapclient || process.env.SAP_CLIENT
+              sapclient: config.sapclient || process.env.SAP_CLIENT,
+              cloudConnectorLocationId: config.CloudConnectorLocationId || config.cloudConnectorLocationId || process.env.CLOUD_CONNECTOR_LOCATION_ID
             };
 
             console.log('Using BTP destination service for', destinationName);
@@ -112,7 +114,8 @@ export class DestinationService {
         User: process.env.SAP_USERNAME,
         Password: process.env.SAP_PASSWORD,
         ProxyType: 'OnPremise',
-        sapclient: process.env.SAP_CLIENT
+          sapclient: process.env.SAP_CLIENT,
+          cloudConnectorLocationId: process.env.CLOUD_CONNECTOR_LOCATION_ID
       };
 
       console.log('Using environment fallback for', destinationName);
@@ -167,8 +170,12 @@ export class DestinationService {
             ...config.headers,
             'SAP-Connectivity-Authentication': `Bearer ${connectivityToken}`,
             'SAP-Connectivity-Destination': destination.Name,
-            'Host': destination.URL.replace('http://', '').replace('https://', '') // Set the target host
+              'Host': destination.URL.replace('http://', '').replace('https://', '') // Set the target host
           };
+
+            if (destination.cloudConnectorLocationId) {
+              config.headers['SAP-Connectivity-Location-ID'] = destination.cloudConnectorLocationId;
+            }
           
           // Add proxy authentication for OnPremise destinations
           if (connectivityServiceUrl.startsWith('http://') || connectivityServiceUrl.startsWith('https://')) {
@@ -180,10 +187,22 @@ export class DestinationService {
         } else {
           console.log('Connectivity service not available, falling back to direct connection');
           // Fall back to direct connection if connectivity service is not available
+            if (destination.cloudConnectorLocationId) {
+              config.headers = {
+                ...config.headers,
+                'SAP-Connectivity-Location-ID': destination.cloudConnectorLocationId
+              };
+            }
         }
       } catch (error) {
         console.error('Error configuring OnPremise connectivity:', error);
         // Fall back to direct connection
+          if (destination.cloudConnectorLocationId) {
+            config.headers = {
+              ...config.headers,
+              'SAP-Connectivity-Location-ID': destination.cloudConnectorLocationId
+            };
+          }
       }
     }
 
