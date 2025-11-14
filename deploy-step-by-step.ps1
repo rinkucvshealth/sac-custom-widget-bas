@@ -39,9 +39,9 @@ cf set-env sac-custom-widget SAP_HOST "vhssnds4ci.hec.sonos.com"
 cf set-env sac-custom-widget SAP_PORT "44300"
 cf set-env sac-custom-widget SAP_CLIENT "500"
 cf set-env sac-custom-widget SAP_USERNAME "AIDATABOT"
-cf set-env sac-custom-widget SAP_PASSWORD "Welcome@2025"
-cf set-env sac-custom-widget OPENAI_API_KEY "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"
-cf set-env sac-custom-widget API_KEY "6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a"
+cf set-env sac-custom-widget SAP_PASSWORD "<REPLACE_WITH_SAP_PASSWORD>"
+cf set-env sac-custom-widget OPENAI_API_KEY "<REPLACE_WITH_OPENAI_API_KEY>"
+cf set-env sac-custom-widget API_KEY "<REPLACE_WITH_WIDGET_API_KEY>"
 cf set-env sac-custom-widget ALLOWED_ORIGIN "https://sonos.us10.sapanalytics.cloud/sap"
 
 # Step 7: Bind and start

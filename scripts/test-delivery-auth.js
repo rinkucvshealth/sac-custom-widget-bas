@@ -10,7 +10,7 @@ const https = require('https');
 const SAP_HOST = process.env.SAP_HOST || 'vhssnds4ci.hec.sonos.com';
 const SAP_PORT = process.env.SAP_PORT || '44300';
 const SAP_USERNAME = process.env.SAP_USERNAME || 'AIDATABOT';
-const SAP_PASSWORD = process.env.SAP_PASSWORD || 'Welcome@2025';
+const SAP_PASSWORD = process.env.SAP_PASSWORD || '<REPLACE_WITH_SAP_PASSWORD>';
 const SAP_CLIENT = process.env.SAP_CLIENT || '500';
 
 const baseURL = `https://${SAP_HOST}:${SAP_PORT}`;

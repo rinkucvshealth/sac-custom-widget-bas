@@ -26,7 +26,7 @@ This guide will help you integrate the AI Chatbot Widget with SAP Analytics Clou
 2. **Add Widget**: Insert → Custom Widget → AI Chatbot
 3. **Configure Widget**: Set the following properties:
    - **API Endpoint**: `https://sac-custom-widget.cfapps.us10.hana.ondemand.com/api`
-   - **API Key**: `6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a`
+   - **API Key**: `<REPLACE_WITH_WIDGET_API_KEY>`
    - **Width**: 400px
    - **Height**: 600px
 
@@ -46,7 +46,7 @@ The widget supports the following configurable properties:
 ```json
 {
   "apiEndpoint": "https://sac-custom-widget.cfapps.us10.hana.ondemand.com/api",
-  "apiKey": "6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a",
+  "apiKey": "<REPLACE_WITH_WIDGET_API_KEY>",
   "width": 400,
   "height": 600
 }

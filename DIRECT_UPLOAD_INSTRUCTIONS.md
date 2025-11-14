@@ -13,7 +13,7 @@
 3. **Upload**: `sac-widget-direct-upload.zip`
 4. **Configure Widget Properties**:
    - **API Endpoint**: `https://sac-custom-widget.cfapps.us10.hana.ondemand.com/api`
-   - **API Key**: `6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a`
+   - **API Key**: `<REPLACE_WITH_WIDGET_API_KEY>`
 
 ### ✅ **Fixes Included in This Widget:**
 

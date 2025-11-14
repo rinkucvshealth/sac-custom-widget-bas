@@ -3,7 +3,7 @@ const https = require('https');
 
 const agent = new https.Agent({ rejectUnauthorized: false });
 const baseURL = 'https://vhssnds4ci.hec.sonos.com:44300';
-const auth = { username: 'AIDATABOT', password: 'Welcome@2025' };
+const auth = { username: 'AIDATABOT', password: '<REPLACE_WITH_SAP_PASSWORD>' };
 
 const services = [
   'API_GLACCOUNTLINEITEM',

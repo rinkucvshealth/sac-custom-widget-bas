@@ -109,8 +109,8 @@ $sapPasswordPlain = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.
 $openaiKey = Read-Host "  OpenAI API Key" -AsSecureString
 $openaiKeyPlain = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($openaiKey))
 
-$apiKey = Read-Host "  API Key [6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a]"
-if ([string]::IsNullOrWhiteSpace($apiKey)) { $apiKey = "6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a" }
+$apiKey = Read-Host "  API Key [<REPLACE_WITH_WIDGET_API_KEY>]"
+if ([string]::IsNullOrWhiteSpace($apiKey)) { $apiKey = "<REPLACE_WITH_WIDGET_API_KEY>" }
 
 $allowedOrigin = Read-Host "  SAC Tenant URL [https://sonos-q.us10.hcs.cloud.sap]"
 if ([string]::IsNullOrWhiteSpace($allowedOrigin)) { $allowedOrigin = "https://sonos-q.us10.hcs.cloud.sap" }

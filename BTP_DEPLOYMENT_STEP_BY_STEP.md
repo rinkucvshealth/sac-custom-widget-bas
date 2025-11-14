@@ -111,8 +111,8 @@ Before deploying, gather these values:
 | `SAP_CLIENT` | SAP client number | `500` |
 | `SAP_USERNAME` | SAP username | `CDS_VIEWS_PY` |
 | `SAP_PASSWORD` | SAP password | `your_password` |
-| `OPENAI_API_KEY` | OpenAI API key | `sk-proj-...` |
-| `API_KEY` | API key for widget authentication | `6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a` |
+| `OPENAI_API_KEY` | OpenAI API key | `<REPLACE_WITH_OPENAI_API_KEY>` |
+| `API_KEY` | API key for widget authentication | `<REPLACE_WITH_WIDGET_API_KEY>` |
 | `ALLOWED_ORIGIN` | Your SAC tenant URL | `https://sonos-q.us10.hcs.cloud.sap` |
 
 ---
@@ -141,7 +141,7 @@ Before deploying, gather these values:
    cf set-env sac-custom-widget OPENAI_API_KEY "your_openai_api_key"
    
    # Server Configuration
-   cf set-env sac-custom-widget API_KEY "6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a"
+   cf set-env sac-custom-widget API_KEY "<REPLACE_WITH_WIDGET_API_KEY>"
    cf set-env sac-custom-widget NODE_ENV "production"
    cf set-env sac-custom-widget PORT "8080"
    cf set-env sac-custom-widget ALLOWED_ORIGIN "https://sonos-q.us10.hcs.cloud.sap"
@@ -196,7 +196,7 @@ Before deploying, gather these values:
    ```powershell
    curl -X POST https://sac-custom-widget.cfapps.us10.hana.ondemand.com/api/chat/query `
      -H "Content-Type: application/json" `
-     -H "X-API-Key: 6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a" `
+     -H "X-API-Key: <REPLACE_WITH_WIDGET_API_KEY>" `
      -d '{\"query\":\"test\",\"sessionId\":\"test123\"}'
    ```
 
@@ -313,7 +313,7 @@ If you prefer, you can host widget files separately (e.g., GitHub Pages, CDN).
 
 3. **Configure Widget Properties:**
    - **API Endpoint**: `https://sac-custom-widget.cfapps.us10.hana.ondemand.com/api`
-   - **API Key**: `6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a`
+   - **API Key**: `<REPLACE_WITH_WIDGET_API_KEY>`
    - **Width**: 400
    - **Height**: 600
 

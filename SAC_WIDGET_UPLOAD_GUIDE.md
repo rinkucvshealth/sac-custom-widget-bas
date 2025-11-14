@@ -55,7 +55,7 @@
 
    **Required Properties:**
    - **API Endpoint**: `https://sac-custom-widget.cfapps.us10.hana.ondemand.com/api`
-   - **API Key**: `6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a`
+   - **API Key**: `<REPLACE_WITH_WIDGET_API_KEY>`
    
    **Optional Properties:**
    - **Width**: `400` (or your preferred width)
@@ -107,7 +107,7 @@
 
 ### **Issue: "Unauthorized" Error**
 - **Check**: API Key is correct in widget properties
-- **Verify**: API Key matches: `6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a`
+- **Verify**: API Key matches: `<REPLACE_WITH_WIDGET_API_KEY>`
 - **Solution**: Update widget properties with correct API Key
 
 ### **Issue: "No matching services found"**
@@ -131,7 +131,7 @@
 | **Widget Name** | SAP GL Account Analytics Chatbot |
 | **Widget JS URL** | `https://sac-custom-widget.cfapps.us10.hana.ondemand.com/widget/widget.js?v=6.14.0` |
 | **API Endpoint** | `https://sac-custom-widget.cfapps.us10.hana.ondemand.com/api` |
-| **API Key** | `6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a` |
+| **API Key** | `<REPLACE_WITH_WIDGET_API_KEY>` |
 
 ---
 

@@ -53,7 +53,7 @@ The widget now supports queries like:
 1. **Upload** `sac-widget-glaccount-updated.zip` to SAC
 2. **Configure** widget properties:
    - API Endpoint: `https://sac-custom-widget.cfapps.us10.hana.ondemand.com/api`
-   - API Key: `6b429687b35c3756bf6f99db7e884d36fadcc4c752e4ca336f4f03955ab4c22a`
+   - API Key: `<REPLACE_WITH_WIDGET_API_KEY>`
 
 ## ✅ **Expected Results:**
 
